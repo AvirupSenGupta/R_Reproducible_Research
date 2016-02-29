@@ -5,7 +5,24 @@ Reproducible Research: Course Project/Assignment 1
 
 ```r
 unzip("repdata-data-activity.zip")
+```
+
+```
+## Warning in unzip("repdata-data-activity.zip"): error 1 in extracting from
+## zip file
+```
+
+```r
 activity = read.csv("activity.csv")
+```
+
+```
+## Warning in file(file, "rt"): cannot open file 'activity.csv': No such file
+## or directory
+```
+
+```
+## Error in file(file, "rt"): cannot open the connection
 ```
 
 ## What is the mean total number of steps taken per day?
@@ -37,7 +54,7 @@ median(stepsperdate$steps, na.rm = TRUE)
 ```
 
 ```
-## [1] 10765
+## [1] 10766.19
 ```
 
 ## What is the average daily activity pattern?
